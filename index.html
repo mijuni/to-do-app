@@ -6,22 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
-    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <form>
+        <input type="text" id="new-todo">
+        <button id="add-button">Add New Todos</button>
+        <button id="delete-all-done" type="button">Delete Done Todos</button>
+    </form>
     <section>
-        <input type="text" id="new-todo"><button id="add-button">Add New Todos</button>
-    </section>
-    <section>
+        <input type="radio" id="show-all" name="todo" checked>
         <label for="show-all">All</label>
-        <input type="radio" name="todo" id="show-all">
+
+        <input type="radio" id="show-open" name="todo">
         <label for="show-open">Open</label>
-        <input type="radio" name="todo" id="show-open">
+
+        <input type="radio" id="show-done" name="todo">
         <label for="show-done">Done</label>
-        <input type="radio" name="todo" id="show-done">
+
     </section>
     <section>
+        <h1>Your Todos</h1>
         <ul id="list"></ul>
     </section>
     <script src="script.js"></script>
