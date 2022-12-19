@@ -11,24 +11,25 @@
 
 <body>
     <form>
-        <input type="text" id="new-todo">
-        <button id="add-button">Add New Todos</button>
-        <button id="delete-all-done" type="button">Delete Done Todos</button>
+        <input type="text" id="new-todo" />
+        <button id="btn-new-todo" type="submit">Add</button>
+        <button id="delete-all-done" type="button">Delete done todos</button>
     </form>
-    <section>
-        <input type="radio" id="show-all" name="todo" checked>
-        <label for="show-all">All</label>
+    <section class="filter">
 
-        <input type="radio" id="show-open" name="todo">
-        <label for="show-open">Open</label>
+        <input type="radio" id="all-todos" name="todo" checked>
+        <label for="all-todos">All</label>
 
-        <input type="radio" id="show-done" name="todo">
-        <label for="show-done">Done</label>
+        <input type="radio" id="open-todos" name="todo">
+        <label for="open-todos">Open</label>
+
+        <input type="radio" id="done-todos" name="todo">
+        <label for="done-todos">Done</label>
 
     </section>
     <section>
-        <h1>Your Todos</h1>
-        <ul id="list"></ul>
+        <h1>Todos</h1>
+        <ul id="todo-list"></ul>
     </section>
     <script src="script.js"></script>
 </body>
